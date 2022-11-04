@@ -1,0 +1,29 @@
+{
+    "name": "Tempo SP",
+    "version": "1.0.0",
+    "description": "Previsão do tempo SP",
+    "manifest_version": 3,
+    "author": "Guilherme Melo",
+    "permission": [
+        "storage",
+        "activeTab",
+        "declarativeContent"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Previsão em SP"
+    }
+}
